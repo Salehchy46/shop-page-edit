@@ -1,0 +1,57 @@
+/* Modern Underline Tabs */
+.category-tabs-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin: 0 0 30px 0;
+    border-bottom: 1px solid #eaeef2;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.category-tabs {
+    display: inline-flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.category-tabs li {
+    margin: 0;
+    padding: 0;
+}
+
+.category-tabs li a {
+    display: block;
+    padding: 0.75rem 0;
+    color: #64748b;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.category-tabs li a:hover {
+    color: #0f172a;
+    border-bottom-color: #94a3b8;
+}
+
+.category-tabs li.active a {
+    color: #0a58ff;
+    border-bottom-color: #0a58ff;
+    font-weight: 600;
+}
+
+/* Optional: smooth scrolling for horizontal tabs */
+.category-tabs-wrapper::-webkit-scrollbar {
+    height: 3px;
+}
+.category-tabs-wrapper::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+.category-tabs-wrapper::-webkit-scrollbar-thumb {
+    background: #0a58ff;
+    border-radius: 4px;
+}
